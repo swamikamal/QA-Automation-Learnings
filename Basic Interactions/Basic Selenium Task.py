@@ -13,9 +13,21 @@ driver = webdriver.Chrome()
 OpenLink = "https://www.google.com/"
 
 driver.get(OpenLink)
-time.sleep(2)
 driver.maximize_window()
+
+time.sleep(2)
+# Locators
+# id
+# name
+# linktext
+# Partiallinktext
+# XPATH
+driver.find_element(By.LINK_TEXT, "मराठी").click()
 elem = driver.find_element(By.XPATH, '//*[@id="APjFqb"]')
 elem.send_keys("Jai Ho!!")
-elem.send_keys(Keys.ENTER)
+driver.find_element(By.XPATH, '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]').click()
+# elem.send_keys(Keys.ENTER)
+# driver.minimize_window()
+time.sleep(2)
+# driver.maximize_window()
 time.sleep(5)
