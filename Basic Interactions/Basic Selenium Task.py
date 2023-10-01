@@ -22,6 +22,7 @@ time.sleep(2)
 # linktext
 # Partiallinktext
 # XPATH
+
 driver.find_element(By.LINK_TEXT, "मराठी").click()
 elem = driver.find_element(By.XPATH, '//*[@id="APjFqb"]')
 elem.send_keys("Jai Ho!!")
