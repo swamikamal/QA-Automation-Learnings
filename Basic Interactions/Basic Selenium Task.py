@@ -5,7 +5,9 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 import time
+
 # Open Google, maximise window and Search Jai HO !! {Chrome Browser}
+
 driver = webdriver.Chrome()
 
 OpenLink = "https://www.google.com/"
